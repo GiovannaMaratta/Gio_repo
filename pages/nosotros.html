@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pow</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div><img src="../img/Logopow.png" alt="Logopow"></div>
+    
+        <!-- Botón menú hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    
+        <nav class="navbar" id="navbar">
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./clientes.html">Clientes</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1 class="titulo-principal">Nosotros</h1>
+        <img src="../img/nosotrosimagen.avif" alt="nosotros">
+        </div>
+        <section>
+            <p class="textJustificado" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, rem unde, nam id ducimus
+                accusamus voluptate vitae quia dolores mollitia alias fugiat quaerat debitis? Voluptate quisquam rem
+                tempora tenetur voluptatum?
+                Quae aspernatur expedita numquam consequuntur, architecto maiores corrupti cupiditate in quis molestiae
+                commodi amet dolorem excepturi minima ab ad a. Inventore, assumenda sunt maiores quas quo saepe
+                accusantium. Eligendi, ea!
+                Maiores assumenda similique, nihil odio esse, in eos, aliquid laudantium quae distinctio sapiente
+                accusantium repellendus voluptas? Ex est ipsam cupiditate libero nam minus perspiciatis, doloremque sint
+                autem totam, delectus quas!
+                tur, laborum dolore accusamus doloribus neque distinctio.
+                Dignissimos vitae corporis harum voluptatum labore perspiciatis, odit asperiores. Voluptate eveniet
+                quaerat labore adipisci iure, doloremque illum modi delectus velit quidem consequuntur molestias
+                veritatis maiores, quasi nostrum similique aspernatur nihil?
+                Est, nihil. Quod sapiente, suscipit explicabo impedit nemo cum ducimus vel? Tempora, possimus nemo!
+                Eius, vero perferendis incidunt molestias sapiente obcaecati iusto rerum ullam dolor magni qui?
+                Consectetur, iusto tenetur?</p>
+        </section>
+
+    </div>
+   
+
+    <footer>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>pow@pow.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Seguinos</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/pow.ar/" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/pow-ecommerce" target="_blank"><img src="../img/likedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <form action="URL_DEL_SERVIDOR" method="POST">
+                <input type="email" name="email" placeholder="Ingresa tu correo" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+        <div class="logo">
+            <img src="../img/Logopow.png" alt="Logopow">
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("navbar").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
