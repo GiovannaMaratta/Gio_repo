@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/*Variables*/
+/*mixin*/
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+  font-family: "Nunito", serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 {
+  color: cornflowerblue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  color: cornflowerblue;
+  font-size: 24px;
+}
+
+h3 {
+  color: darkblue;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  color: black;
+}
+
+/*Estilos de index*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-toggle { /* Botón hamburguesa */
+  display: none; /* Oculto en desktop */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar { /* Estilos del menú */
+  display: flex;
+  color: white;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/*Media query para mobile 768px y 480px*/
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    text-align: center;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .nav-items {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .nav-items a {
+    padding: 15px;
+    display: block;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-section {
+    width: 100%;
+  }
+  .social-icons {
+    flex-direction: row;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  .cliente {
+    max-width: 300px !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto !important;
+    object-fit: cover;
+    width: 100%;
+  }
+  .cliente img {
+    width: 120px;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+  }
+}
+/*Estilos footer*/
+.footer-logo {
+  width: 50px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-top: 2px solid #ddd;
+  height: auto;
+  margin-top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+section {
+  text-align: justify;
+}
+
+/*Estilos de clientes*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cliente {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 120px;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.cliente img {
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+}
+
+/*Estilos de blog*/
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card-title { /*para pisar los estilos de boostrap*/
+  color: cornflowerblue;
+}
+
+.text {
+  font-size: 14px;
+  color: black;
+  margin-top: 15px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/*Estilos de contacto*/
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  font-family: "Nunito", serif;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #285dc1;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+/*Adaptación imagenes*/
+/* Estilos para mobile */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query para desktop */
+@media (min-width: 1024px) {
+  img {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
